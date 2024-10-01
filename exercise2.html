@@ -17,52 +17,60 @@
     <script>
       /* TODO: write JS code here */
 
-      // Set initial color to blue
-      let box = document.querySelector('#mydiv');
-      box.style.backgroundColor = "blue";
+      // // Set initial color to blue
+      // let box = document.querySelector('#mydiv');
+      // box.style.backgroundColor = "blue";
 
-      // change from blue to red
-      // let boxRed = document.querySelector('#mydiv');
-      // boxRed.addEventListener('click', window.onlod = () => boxRed.style.background = "red");
+      // // change from blue to red
+      // // let boxRed = document.querySelector('#mydiv');
+      // // boxRed.addEventListener('click', window.onlod = () => boxRed.style.background = "red");
 
-      // // change from red to green
-      // let boxGreen = document.querySelector('#mydiv');
-      // boxGreen.addEventListener('click', window.onlod = () => boxRed.style.background = "green");
+      // // // change from red to green
+      // // let boxGreen = document.querySelector('#mydiv');
+      // // boxGreen.addEventListener('click', window.onlod = () => boxRed.style.background = "green");
 
-      // let clickCount = 0;
+      // // let clickCount = 0;
 
-      // box.addEventListener('click', window.onload = ()=> {
-      //   clickCount++;
+      // // box.addEventListener('click', window.onload = ()=> {
+      // //   clickCount++;
 
-      //   if (clickCount === 1) {
-      //     let redBox = document.querySelector('#mydiv');
-      //     redBox.style.backgroundColor = "red";
-      //   } else if (clickCount === 2) {
-      //     let greenBox = document.querySelector('#mydiv');
-      //     greenBox.style.backgroundColor = "green";
-      //   } else if (clickCount === 3) {
-      //     let blueBox = document.querySelector('#mydiv');
-      //     blueBox.style.backgroundColor = "blue";
-      //     clickCount = 0;
+      // //   if (clickCount === 1) {
+      // //     let redBox = document.querySelector('#mydiv');
+      // //     redBox.style.backgroundColor = "red";
+      // //   } else if (clickCount === 2) {
+      // //     let greenBox = document.querySelector('#mydiv');
+      // //     greenBox.style.backgroundColor = "green";
+      // //   } else if (clickCount === 3) {
+      // //     let blueBox = document.querySelector('#mydiv');
+      // //     blueBox.style.backgroundColor = "blue";
+      // //     clickCount = 0;
+      // //   }
+      // // });
+
+      // let counter = 0;
+
+      // function change() {
+      //   let box = document.querySelector('#mydiv');
+      //   let colors = ["blue", "red", "green", "yellow"];
+        
+      //   box.style.backgroundColor = colors[counter];
+
+      //   if (counter < colors.length) {
+      //     counter++;
+      //   } else {
+      //     counter = 0;
       //   }
-      // });
-
-      let counter = 0;
+      // }
 
       function change() {
-        let box = document.querySelector('#mydiv');
-        let colors = ["blue", "red", "green", "yellow"];
+        let colors = ["blue", "red", "green", "yellow", "orange", "purple"];
+        // randomw number generator
+        let i = Math.floor(Math.random() * colors.length);
+        let elementToChange = document.querySelector("#mydiv");
+        let random = colors[i];
         
-        box.style.backgroundColor = colors[counter];
-
-        if (counter < colors.length) {
-          counter++;
-        } else {
-          counter = 0;
-        }
+        elementToChange.style.backgroundColor = random;
       }
-
-      
 
 
 
