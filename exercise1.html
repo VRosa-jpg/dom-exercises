@@ -21,9 +21,16 @@
   </head>
   <body>
    
-    <div id="mydiv" >Hello world</div>
+    <div id="mydiv">Hello world</div>
     <script>
       //code here
+      let yellowBox = document.querySelector("#mydiv");
+      yellowBox.addEventListener('mouseout', window.onload = () => {yellowBox.textContent ="Hello World";})
+
+      let yellowBoxes = document.querySelector("#mydiv");
+      yellowBoxes.addEventListener('mouseover', window.onload = () => {yellowBoxes.textContent ="Can I help you?";})
+
+
     </script>
   </body>
 </html>
